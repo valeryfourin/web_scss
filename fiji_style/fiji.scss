@@ -1,0 +1,111 @@
+// у цьому файлі продемонстровано вимоги до домашнього завдання 'препроцесор SCSS LESS SASS'
+// стильові правила вирізані з файлу fiji_main.css, щоб уникнути дублювання і зібрати правила,
+// необхідні для завдання у одному файлі
+
+
+// імпорт файлів
+@import 'back_settings';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+
+// використання вкладень
+.header {
+    a {
+	color: white;
+    text-decoration: none;
+    }
+}
+
+.next {
+    img{
+	width: 20px;
+    height: 20px;
+    }
+}
+
+.topnav {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    a{
+        float: left;
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding: auto;
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 25px;
+    }
+}
+
+.topnav {
+    .icon {
+    display: none;
+    }
+}
+
+
+// використання змінних
+$width_content: 100vw;
+$size_sm: 1.6em;
+$font_sec: 'DM Serif Display', serif;
+
+#firstcon{
+	height: 100vh;
+	width: $width_content;
+	background-image: url(../fiji_images/ocean.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+  	background-size: cover;
+	
+}
+
+.firstcontent{
+	position: relative;
+	width: $width_content;
+	height: 50vh;
+}
+
+p[work]{
+	font-size: $size_sm;
+}
+
+.hints{
+	font-family: $font_sec;
+	font-size: $size_sm;
+	text-align: center;
+}
+
+
+// використання @mixin
+
+@mixin shadow($value){
+    -webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+    box-shadow: $value;
+    height: 382px;
+	width: 268px;
+}
+
+.surfer {
+    img{
+        @include shadow(-11px 13px 5px 3px rgba(0,0,0,0.14))
+    }
+}
+
+@mixin disp_fl($direction){
+    display: flex;
+	align-items: $direction;
+	justify-content: $direction;
+}
+
+.next {
+    width: 100%;
+    @include disp_fl(center);
+}

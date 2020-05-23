@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  padding: 0%;
+  margin: 0%; }
+
+.header a {
+  color: white;
+  text-decoration: none; }
+
+.next img {
+  width: 20px;
+  height: 20px; }
+
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .topnav a {
+    float: left;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px; }
+
+.topnav .icon {
+  display: none; }
+
+#firstcon {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../fiji_images/ocean.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.firstcontent {
+  position: relative;
+  width: 100vw;
+  height: 50vh; }
+
+p[work] {
+  font-size: 1.6em; }
+
+.hints {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.6em;
+  text-align: center; }
+
+.surfer img {
+  -webkit-box-shadow: -11px 13px 5px 3px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -11px 13px 5px 3px rgba(0, 0, 0, 0.14);
+  box-shadow: -11px 13px 5px 3px rgba(0, 0, 0, 0.14);
+  height: 382px;
+  width: 268px; }
+
+.next {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=fiji.css.map */
